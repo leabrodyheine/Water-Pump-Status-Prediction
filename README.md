@@ -30,20 +30,24 @@ The `TestAll.py` script loops through all the command-line argument options inst
 ### Running Part 2
 For hyperparameter optimization, run the `part2.py` script. It uses Optuna to find the best hyperparameters for different classifiers.
 
-### Data
+## Data
 The dataset for this project is sourced from the DrivenData competition Pump it Up: Data Mining the Water Table. It consists of training data (input features and labels) and test data (input features only).
 
-### Preprocessing
-Various preprocessing steps are implemented, including handling categorical features, dealing with missing values, scaling numerical values, and dealing with datetime features. For categorical features, we use three types of encoding: OneHotEncoder, OrdinalEncoder, and TargetEncoder. For numerical features, we consider two options: no scaling and StandardScaler.
+## Preprocessing
+Various preprocessing steps are implemented, including handling categorical features, dealing with missing values, scaling numerical values, and dealing with datetime features. For categorical features, I use three types of encoding: O
+- OneHotEncoder
+- OrdinalEncoder
+- TargetEncoder
 
-### Machine Learning Models
+For numerical features, I consider two options: no scaling and StandardScaler.
+
+## Machine Learning Models
 I evaluate the performance of five families of machine learning models:
+- Logistic Regression
+- Random Forest Classifier
+- Gradient Boosting Classifier
+- Histogram-based Gradient Boosting Classifier
+- Multi-layer Perceptron Classifier
 
-Logistic Regression
-Random Forest Classifier
-Gradient Boosting Classifier
-Histogram-based Gradient Boosting Classifier
-Multi-layer Perceptron Classifier
-
-### Hyperparameter Optimization
+## Hyperparameter Optimization
 The project uses Optuna for hyperparameter optimization. The optimization process includes defining the configuration space and evaluating the performance using cross-validation.
